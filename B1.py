@@ -2,7 +2,7 @@ from fastapi import FastAPI, status, HTTPException, Depends
 from sqlalchemy import create_engine, Column, Integer, String, Boolean
 from sqlalchemy.orm import declarative_base, sessionmaker, Session
 
-DATABASE_URL = "mysql+pymysql://root:password@localhost:3306/parking_db"
+DATABASE_URL = "mysql+pymysql://root:123456$@localhost:3306/parking_db"
 
 engine = create_engine(DATABASE_URL)
 
